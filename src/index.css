@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary: 142 69 173;
+  --primary-foreground: 255 255 255;
+  --secondary: 240 244 248;
+  --secondary-foreground: 15 23 42;
+  --muted: 240 244 248;
+  --muted-foreground: 100 116 139;
+  --accent: 240 244 248;
+  --accent-foreground: 15 23 42;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --border: 226 232 240;
+  --input: 226 232 240;
+  --ring: 142 69 173;
+  --background: 255 255 255;
+  --foreground: 15 23 42;
+  --card: 255 255 255;
+  --card-foreground: 15 23 42;
+  --popover: 255 255 255;
+  --popover-foreground: 15 23 42;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.kerala-gradient {
+  background: linear-gradient(135deg, #2E8B57 0%, #228B22 25%, #32CD32 50%, #FFD700 75%, #FF6347 100%);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.weather-icon {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.floating-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-glow {
+  from { box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); }
+  to { box-shadow: 0 0 30px rgba(255, 215, 0, 0.8); }
+}
+
+.home-page-bg {
+  background: linear-gradient(135deg, #e6f7f1 0%, #fffde7 100%);
+}
+
+.light-page-bg {
+  background-color: #f8fafc;
+}
